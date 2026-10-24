@@ -67,7 +67,9 @@ h1, h2, h3 { line-height: 1.4; }
   border-radius: var(--radius-lg);
   padding: 24px;
   scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
 }
+
 .avatar {
   width: 88px; height: 88px; border-radius: 22px;
   background: #1B2740; border: 1px solid var(--border);
@@ -202,6 +204,24 @@ a.tag:hover { border-color: var(--accent); color: var(--accent); }
 .link-card .arrow { color: var(--accent); font-family: var(--mono); }
 
 .footer { text-align: center; color: var(--muted); font-size: 13px; padding: 8px 0; font-family: var(--mono); }
+
+/* 画面の高さが低いPC（ノートPCなど）ではサイドバーを詰めて、メニューが切れないようにする */
+@media (min-width: 881px) and (max-height: 780px) {
+  .sidebar { top: 16px; max-height: calc(100vh - 32px); padding: 20px; }
+  .layout { padding-top: 16px; }
+  .avatar { float: left; width: 50px; height: 50px; border-radius: 14px; margin-right: 12px; font-size: 10px; }
+  .profile-name { margin-top: 0; font-size: 20px; line-height: 1.35; }
+  .profile-name-en { margin-bottom: 12px; font-size: 13px; line-height: 1.5; }
+  .profile-meta { clear: both; gap: 4px; font-size: 13px; margin-bottom: 12px; }
+  .side-nav { padding-top: 10px; }
+  .nav-item > a { padding: 7px 12px; }
+  .sub-nav a { padding: 1px 10px; font-size: 13px; }
+}
+@media (min-width: 881px) and (max-height: 660px) {
+  .avatar, .profile-name-en, .profile-meta div:not(:last-child) { display: none; }
+  .profile-name { margin: 0 0 6px; }
+  .nav-item > a { padding: 6px 12px; }
+}
 
 /* ---------- スマホ・タブレット ---------- */
 @media (max-width: 880px) {
