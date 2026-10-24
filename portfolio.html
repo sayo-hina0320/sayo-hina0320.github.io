@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[氏名] | ポートフォリオ</title>
+  <meta name="description" content="[氏名]のポートフォリオ（インターン、学事活動、課外活動、所属学会、外部サイト）">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="portfolio">
+  <a class="skip-link" href="#main">本文へスキップ</a>
+  <nav id="mobile-bar" class="mobile-bar" aria-label="メインメニュー（スマホ）"></nav>
+
+  <div class="layout">
+    <aside id="sidebar" class="sidebar">
+      <noscript><a href="index.html">ホーム</a> / <a href="research.html">研究実績</a> / <a href="portfolio.html">ポートフォリオ</a></noscript>
+    </aside>
+
+    <main id="main" class="content">
+
+      <section class="card">
+        <p class="eyebrow">03 — Portfolio</p>
+        <h2 class="page-title">ポートフォリオ</h2>
+        <p class="lead">[研究以外の経験や活動を紹介します。]</p>
+      </section>
+
+      <!-- ===== インターン ===== -->
+      <section id="internship" class="card" data-nav="インターン">
+        <h2 class="sub-title">インターン<span class="en">Internships</span></h2>
+        <ul class="timeline">
+          <li>
+            <span class="period">[20XX.XX – 20XX.XX]</span>
+            <div class="body">
+              <p class="org">[企業名・部署名]</p>
+              <p class="desc">[業務内容・取り組んだこと・成果の概要]</p>
+            </div>
+          </li>
+          <li>
+            <span class="period">[20XX.XX – 20XX.XX]</span>
+            <div class="body">
+              <p class="org">[企業名・部署名]</p>
+              <p class="desc">[業務内容・取り組んだこと・成果の概要]</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ===== 学事活動 ===== -->
+      <section id="academic" class="card" data-nav="学事活動">
+        <h2 class="sub-title">学事活動<span class="en">Academic Activities</span></h2>
+        <ul class="timeline">
+          <li>
+            <span class="period">[20XX.XX – 20XX.XX]</span>
+            <div class="body">
+              <p class="org">[ティーチングアシスタント（TA）など]</p>
+              <p class="desc">[担当科目・内容]</p>
+            </div>
+          </li>
+          <li>
+            <span class="period">[20XX.XX]</span>
+            <div class="body">
+              <p class="org">[学会運営スタッフ・論文査読など]</p>
+              <p class="desc">[内容]</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ===== 課外活動 ===== -->
+      <section id="extracurricular" class="card" data-nav="課外活動">
+        <h2 class="sub-title">課外活動<span class="en">Extracurricular</span></h2>
+        <div class="grid">
+          <article class="tile">
+            <p class="label">[20XX – 20XX]</p>
+            <h3>[活動名・団体名]</h3>
+            <p class="desc">[サークル・ボランティア・地域活動などの内容]</p>
+          </article>
+          <article class="tile">
+            <p class="label">[20XX]</p>
+            <h3>[コンテスト・ハッカソン名]</h3>
+            <p class="desc">[内容・結果]</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== 所属会員 ===== -->
+      <section id="memberships" class="card" data-nav="所属会員">
+        <h2 class="sub-title">所属会員<span class="en">Memberships</span></h2>
+        <ul class="chips">
+          <li>[学会名 1]<span class="year">[学生会員]</span></li>
+          <li>[学会名 2]<span class="year">[正会員]</span></li>
+          <li>[学会名 3]</li>
+        </ul>
+      </section>
+
+      <!-- ===== 外部サイト ===== -->
+      <section id="links" class="card" data-nav="外部サイト">
+        <h2 class="sub-title">外部サイト<span class="en">Links</span></h2>
+        <!-- href="#" の # を、各サイトのURLに書き換えてください -->
+        <div class="link-grid">
+          <a class="link-card" href="#" target="_blank" rel="noopener">Google Scholar<span class="arrow" aria-hidden="true">↗</span></a>
+          <a class="link-card" href="#" target="_blank" rel="noopener">researchmap<span class="arrow" aria-hidden="true">↗</span></a>
+          <a class="link-card" href="#" target="_blank" rel="noopener">ORCID<span class="arrow" aria-hidden="true">↗</span></a>
+          <a class="link-card" href="#" target="_blank" rel="noopener">GitHub<span class="arrow" aria-hidden="true">↗</span></a>
+          <a class="link-card" href="#" target="_blank" rel="noopener">LinkedIn<span class="arrow" aria-hidden="true">↗</span></a>
+          <a class="link-card" href="#" target="_blank" rel="noopener">[研究室Webサイト]<span class="arrow" aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <footer id="footer" class="footer"></footer>
+    </main>
+  </div>
+
+  <script src="assets/js/profile.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

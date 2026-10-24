@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[氏名] | 研究実績</title>
+  <meta name="description" content="[氏名]の研究実績（国際論文、国際会議、国内会議、表彰・賞）">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="research">
+  <a class="skip-link" href="#main">本文へスキップ</a>
+  <nav id="mobile-bar" class="mobile-bar" aria-label="メインメニュー（スマホ）"></nav>
+
+  <div class="layout">
+    <aside id="sidebar" class="sidebar">
+      <noscript><a href="index.html">ホーム</a> / <a href="research.html">研究実績</a> / <a href="portfolio.html">ポートフォリオ</a></noscript>
+    </aside>
+
+    <main id="main" class="content">
+
+      <section class="card">
+        <p class="eyebrow">02 — Research</p>
+        <h2 class="page-title">研究実績</h2>
+        <p class="lead">[研究テーマの概要を1〜2文で記載します。]</p>
+      </section>
+
+      <!--
+        ===== 業績の書き方 =====
+        1件追加するときは <li class="pub"> 〜 </li> のまとまりを丸ごとコピーして、新しい順に並べてください。
+        自分の名前は <span class="me">〜</span> で囲むと強調表示されます。
+        リンクが不要なら <p class="pub-links"> の行を消してください。
+      -->
+
+      <!-- ===== 国際論文 ===== -->
+      <section id="journals" class="card" data-nav="国際論文">
+        <h2 class="sub-title">国際論文<span class="en">Journal Papers</span></h2>
+        <ol class="pub-list">
+          <li class="pub">
+            <span class="pub-year">[20XX]</span>
+            <div class="pub-body">
+              <p class="pub-title">[論文タイトル]</p>
+              <p class="pub-meta"><span class="me">[自分の名前]</span>, [共著者名], <em>[ジャーナル名]</em>, vol. [X], no. [X], pp. [XX–XX], [20XX].</p>
+              <p class="pub-links"><a class="tag" href="#">DOI</a><a class="tag" href="#">PDF</a></p>
+            </div>
+          </li>
+          <li class="pub">
+            <span class="pub-year">[20XX]</span>
+            <div class="pub-body">
+              <p class="pub-title">[論文タイトル]</p>
+              <p class="pub-meta">[共著者名], <span class="me">[自分の名前]</span>, <em>[ジャーナル名]</em>, vol. [X], pp. [XX–XX], [20XX].</p>
+              <p class="pub-links"><a class="tag" href="#">DOI</a></p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ===== 国際会議 ===== -->
+      <section id="intl-conf" class="card" data-nav="国際会議">
+        <h2 class="sub-title">国際会議<span class="en">International Conferences</span></h2>
+        <ol class="pub-list">
+          <li class="pub">
+            <span class="pub-year">[20XX]</span>
+            <div class="pub-body">
+              <p class="pub-title">[発表タイトル]</p>
+              <p class="pub-meta"><span class="me">[自分の名前]</span>, [共著者名], in <em>Proc. [会議名]</em>, [開催地], [20XX年X月].</p>
+              <p class="pub-links"><span class="tag">Oral</span><span class="tag award">Best Paper Award</span></p>
+            </div>
+          </li>
+          <li class="pub">
+            <span class="pub-year">[20XX]</span>
+            <div class="pub-body">
+              <p class="pub-title">[発表タイトル]</p>
+              <p class="pub-meta"><span class="me">[自分の名前]</span>, [共著者名], in <em>Proc. [会議名]</em>, [開催地], [20XX年X月].</p>
+              <p class="pub-links"><span class="tag">Poster</span></p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ===== 国内会議 ===== -->
+      <section id="domestic-conf" class="card" data-nav="国内会議">
+        <h2 class="sub-title">国内会議<span class="en">Domestic Conferences</span></h2>
+        <ol class="pub-list">
+          <li class="pub">
+            <span class="pub-year">[20XX]</span>
+            <div class="pub-body">
+              <p class="pub-title">「[発表タイトル]」</p>
+              <p class="pub-meta"><span class="me">[自分の名前]</span>, [共著者名], [学会・研究会名], [開催地], [20XX年X月].</p>
+            </div>
+          </li>
+          <li class="pub">
+            <span class="pub-year">[20XX]</span>
+            <div class="pub-body">
+              <p class="pub-title">「[発表タイトル]」</p>
+              <p class="pub-meta"><span class="me">[自分の名前]</span>, [共著者名], [学会・研究会名], [開催地], [20XX年X月].</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ===== 表彰・賞 ===== -->
+      <section id="awards" class="card" data-nav="表彰・賞">
+        <h2 class="sub-title">表彰・賞<span class="en">Awards</span></h2>
+        <ul class="plain-list">
+          <li>[賞の名称] — [授与団体]<span class="date">[20XX年X月]</span></li>
+          <li>[賞の名称] — [授与団体]<span class="date">[20XX年X月]</span></li>
+        </ul>
+      </section>
+
+      <!-- ===== その他 ===== -->
+      <section id="others" class="card" data-nav="その他">
+        <h2 class="sub-title">その他<span class="en">Others</span></h2>
+        <ul class="plain-list">
+          <li>[招待講演・解説記事・特許・研究費の獲得など]<span class="date">[20XX年X月]</span></li>
+          <li>[項目]<span class="date">[20XX年X月]</span></li>
+        </ul>
+      </section>
+
+      <footer id="footer" class="footer"></footer>
+    </main>
+  </div>
+
+  <script src="assets/js/profile.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
