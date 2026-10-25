@@ -181,7 +181,7 @@ a.tag:hover { border-color: var(--accent); color: var(--accent); }
 
 /* タイムライン（ポートフォリオ） */
 .timeline { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
-.timeline li {
+.timeline > li {
   display: flex; flex-wrap: wrap; gap: 6px 18px; padding: 16px 20px;
   background: var(--surface-2); border: 1px solid var(--border-soft); border-radius: var(--radius-sm);
 }
@@ -190,6 +190,7 @@ a.tag:hover { border-color: var(--accent); color: var(--accent); }
 .timeline .body p { margin: 0; }
 .timeline .org { font-weight: 600; }
 .timeline .desc { color: var(--muted); font-size: 15px; }
+.timeline .plain-list { margin-top: 4px; gap: 2px; }
 
 /* 外部リンク */
 .link-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
